@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Safe Route Planning | SafetyHer</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="./index.html">SafetyHer</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="./index.html">Home</a><a href="./login.html">Login</a><a href="./register.html">Register</a>
+      <a href="./profile.html">Profile</a><a href="./nearby-safe-places.html">Safe places</a>
+      <a href="./self-defence.html">Self-defence</a><a href="./report-incident.html">Report incident</a>
+      <a href="./trusted-contacts.html">Trusted contacts</a><a href="./safe-route.html">Safe route</a>
+    </nav>
+  </header>
+  <main class="section page-content">
+    <section class="page-hero">
+      <div><span class="eyebrow">Plan before you travel</span><h1>Safe route planning</h1><p class="muted">Search for a destination in a map service, then review the route and transport options before you leave.</p></div>
+      <img class="page-image" src="./assets/illustration.svg" alt="SafetyHer travel safety illustration">
+    </section>
+    <form class="form-card route-search" action="https://www.google.com/maps/search/" method="get" target="_blank" rel="noopener noreferrer">
+      <input type="hidden" name="api" value="1">
+      <label for="destination">Search a destination or public place</label>
+      <div class="route-input"><input id="destination" name="query" type="search" placeholder="e.g. hospital near Connaught Place" required><button class="btn primary" type="submit">Search maps</button></div>
+      <p class="muted">Your search opens Google Maps in a new tab. Do not enter a private home address on a shared device.</p>
+    </form>
+    <div class="grid two">
+      <article class="card"><h2>Before you go</h2><p>Check the route, transport availability, approximate travel time, and whether the destination is open.</p></article>
+      <article class="card"><h2>Stay connected</h2><p>If it feels safe, let someone you trust know your plan and when you expect to arrive.</p></article>
+      <article class="card"><h2>Choose public options</h2><p>Consider staffed transport points and familiar public places. Reassess if conditions change.</p></article>
+      <article class="card"><h2>Emergency support</h2><p>If you are in immediate danger in India, call <a href="tel:112">112</a>.</p></article>
+    </div>
+    <p class="notice">SafetyHer does not calculate, verify, or monitor routes. Map results and conditions may change; use your judgement.</p>
+  </main>
+  <footer class="footer"><div class="footer-inner"><strong>SafetyHer</strong><a href="./index.html">Back to home</a></div></footer>
+</body>
+</html>
